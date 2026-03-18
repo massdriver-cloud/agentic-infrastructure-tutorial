@@ -4,6 +4,9 @@ A step-by-step walkthrough for building infrastructure with AI agents safely and
 
 **Context**: This tutorial accompanies the Massdriver + Claude Code fireside chat "Making Infrastructure Safe for Agents" with Kelsey Hightower (March 18, 2026).
 
+> [!tip] **Live Session PR**
+> Want to see exactly what was built during the fireside chat? Check out the [pull request from the live session](https://github.com/massdriver-cloud/massdriver-catalog/pull/new/0318-live-session) against the [Massdriver Catalog](https://github.com/massdriver-cloud/massdriver-catalog) — real bundles, built live with Claude Code.
+
 ## What We're Building
 
 A TODO API consisting of:
