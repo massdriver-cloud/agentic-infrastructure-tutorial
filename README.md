@@ -266,7 +266,7 @@ Writing this from scratch - with proper compliance controls, IAM policies scoped
 
 ## Learn More
 
-- [Massdriver AI](https://www.massdriver.cloud/ai) - How Massdriver acts as the harness between AI agents and your cloud
+- [Massdriver Agentic Harness & Context Engine](https://www.massdriver.cloud/ai) - Give AI agents the guardrails, structured context, and blast radius containment they need to ship production-grade infrastructure autonomously
 - [Development Environments for Agentic Infrastructure](https://www.massdriver.cloud/blogs/development-environments-for-agentic-infrastructure) - Deep dive on disposable environments and blast radius containment
 
 ## Reference
