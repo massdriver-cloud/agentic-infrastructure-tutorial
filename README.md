@@ -32,10 +32,12 @@ Visit [app.massdriver.cloud](https://app.massdriver.cloud) and sign up with GitH
 
 The service account provides API access for CLI and agent authentication.
 
-1. Navigate to **Organization Settings** → **Service Accounts**
-2. Click **Create Service Account**
+1. Navigate to **Service Accounts** in the sidebar
+2. Click **Create service account**
 3. Name it (e.g., `claude-agent`)
 4. Copy and save the API key securely
+
+![Service Accounts page](assets/create-service-account.png)
 
 ### 1.3 Get Your Organization ID
 
@@ -87,6 +89,17 @@ This publishes the platform definitions to your Massdriver instance.
 
 **Important**: After publishing, you'll see **AWS IAM Assume Role** in the credential type selector. Use this one, not the deprecated **AWS IAM Role** (`massdriver/aws-iam-role`) that exists on SaaS instances.
 
+### 2.5 Add AWS Credential
+
+Now add your AWS credential using the platform you just published:
+
+1. Navigate to **Credentials** in the sidebar
+2. Click **Add credential** and select **AWS IAM Assume Role**
+3. Follow the guided setup to create an IAM role with the required permissions
+4. Enter the Role ARN and External ID
+
+![Add AWS IAM Role credential](assets/add-aws-iam-role.png)
+
 ---
 
 ## Part 3: Start Claude Code Environment
@@ -109,6 +122,8 @@ cp ~/.config/massdriver/config.yaml .massdriver/config.yaml
 ```
 
 ### 3.3 Set Environment Variables
+
+**Optional** Add your API key here, or Claude will prompt for login at startup.
 
 ```bash
 export ANTHROPIC_API_KEY="your-anthropic-api-key"
@@ -139,6 +154,8 @@ Start Claude Code and install the plugin:
 ```bash
 claude
 ```
+
+**Follow the Claude login prompt.**
 
 Then inside Claude Code:
 

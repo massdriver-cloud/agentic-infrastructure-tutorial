@@ -12,5 +12,5 @@ services:
       # Working directory for bundle development
       - .:/workspace
       # Massdriver catalog (artifact definitions, platforms, templates)
-      - ../massdriver-catalog:/catalog:ro
+      - ../massdriver-catalog:/catalog
     working_dir: /workspace
