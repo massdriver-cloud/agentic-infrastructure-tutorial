@@ -156,7 +156,7 @@ The plugin gives Claude structured context about your infrastructure - artifact 
 Inside the container, run Claude Code and execute the development workflow:
 
 ```
-/massdriver:develop Create a "dynamodb" module with a fairly simple interface for managing a table. Make dangerous-to-change fields immutable, hard code most compliance recommendations from the Massdriver provisioner. Note, nothing in this git repo has been published besides the AWS platform.
+/massdriver:develop Create an "aws-dynamodb-table" module with a fairly simple interface for managing a table. Make dangerous-to-change fields immutable, hard code most compliance recommendations from the Massdriver provisioner. Note, nothing in this git repo has been published besides the AWS platform.
 ```
 
 Claude Code will scaffold the bundle, define the artifact schema, run Checkov compliance checks (iterating until they pass), and publish with `--development`.
