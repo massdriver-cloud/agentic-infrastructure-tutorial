@@ -151,7 +151,7 @@ The plugin gives Claude structured context about your infrastructure - artifact 
 
 ---
 
-## Part 4: Run the Prompt
+## Part 4: Create the DynamoDB Bundle
 
 Inside the container, run Claude Code and execute the development workflow:
 
@@ -159,16 +159,19 @@ Inside the container, run Claude Code and execute the development workflow:
 /massdriver:develop Create a "dynamodb" module with a fairly simple interface for managing a table. Make dangerous-to-change fields immutable, hard code most compliance recommendations from the Massdriver provisioner. Note, nothing in this git repo has been published besides the AWS platform.
 ```
 
-### What Happens
+Claude Code will scaffold the bundle, define the artifact schema, run Checkov compliance checks (iterating until they pass), and publish with `--development`.
 
-Claude Code will:
+---
 
-1. **Scaffold the bundle** - Creates the OpenTofu/Terraform configuration structure
-2. **Define the artifact** - Creates a schema for what the DynamoDB table exposes (ARN, policies)
-3. **Run compliance checks** - Executes Checkov and iterates until all security checks pass
-4. **Publish with `--development`** - Makes the bundle available in your Massdriver account
+## Part 5: Create the Lambda Bundle
 
-The artifact definition is the contract for what this infrastructure provides to consumers. Other bundles can depend on this contract without knowing implementation details.
+Now create a Lambda function that consumes the DynamoDB artifact:
+
+```
+/massdriver:develop Create an "aws-lambda-todo-api" bundle — a Node.js Lambda behind API Gateway HTTP API that implements a TODO REST API. Connect to the DynamoDB artifact to get the table name and attach one of its exposed IAM policies. Bundle manages its own S3 deployment bucket. No custom domain, no VPC, no Route 53.
+```
+
+The Lambda doesn't define its own DynamoDB permissions - it pulls them from the artifact. This is the contract in action.
 
 ---
 
