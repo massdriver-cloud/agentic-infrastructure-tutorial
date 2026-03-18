@@ -1,0 +1,16 @@
+services:
+  claude-code:
+    build: .
+    container_name: claude-code-massdriver
+    stdin_open: true
+    tty: true
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    volumes:
+      # Massdriver CLI credentials for the agent
+      - ./.massdriver:/root/.config/massdriver:ro
+      # Working directory for bundle development
+      - .:/workspace
+      # Massdriver catalog (artifact definitions, platforms, templates)
+      - ../massdriver-catalog:/catalog:ro
+    working_dir: /workspace

@@ -1,0 +1,5 @@
+# Massdriver credentials (contains API keys)
+.massdriver/
+
+# Claude Code session data
+.claude/
