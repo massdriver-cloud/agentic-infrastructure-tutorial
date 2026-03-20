@@ -9,7 +9,7 @@ A step-by-step walkthrough for building infrastructure with AI agents safely and
 > Don't have 10 minutes to do this whole tutorial?! Really??? Come on‽ Well if you really don't, here is the full dry-run [PR](https://github.com/massdriver-cloud/massdriver-catalog/pull/32).
 
 > [!NOTE]https://youtu.be/4coXKsnDAMU
-> **Watch the Recording** — Missed the live session? Watch Kelsey Hightower and the Massdriver team build production-grade infrastructure bundles from scratch with Claude Code — [full recording on YouTube](https://bit.ly/4uBBIih).
+> **Watch the Recording** — Missed the live session? Watch Kelsey Hightower and the Massdriver team build production-grade infrastructure bundles from scratch with Claude Code — [full recording on YouTube](https://bit.ly/agentic-infrastructure).
 
 ## What We're Building
 
