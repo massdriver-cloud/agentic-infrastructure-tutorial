@@ -8,8 +8,8 @@ A step-by-step walkthrough for building infrastructure with AI agents safely and
 > **Live Session PR** — Want to see exactly what was built during the fireside chat? Check out the [pull request from the live session](https://github.com/massdriver-cloud/massdriver-catalog/pull/new/0318-live-session) against the [Massdriver Catalog](https://github.com/massdriver-cloud/massdriver-catalog) — real bundles, built live with Claude Code.
 > Don't have 10 minutes to do this whole tutorial?! Really??? Come on‽ Well if you really don't, here is the full dry-run [PR](https://github.com/massdriver-cloud/massdriver-catalog/pull/32).
 
-> [!NOTE]
-> **Watch the Recording** — Missed the live session? Watch Kelsey Hightower and the Massdriver team build production-grade infrastructure bundles from scratch with Claude Code — [full recording on YouTube](https://www.youtube.com/live/DAzSiqoiTkg).
+> [!NOTE]https://youtu.be/4coXKsnDAMU
+> **Watch the Recording** — Missed the live session? Watch Kelsey Hightower and the Massdriver team build production-grade infrastructure bundles from scratch with Claude Code — [full recording on YouTube](https://bit.ly/4uBBIih).
 
 ## What We're Building
 
